@@ -1,0 +1,40 @@
+/* --- REGULAR MODE (Light) --- */
+.card {
+		font-family: arial;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    color: #2c3e50; /* Dark grey-blue is easier on eyes than pure black */
+    background-color: white; 
+		padding: 30px;
+    border-radius: 8px;
+		border: 1px solid #e0e0e0;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* This overrides the line-height for ONLY the list items */
+.card li {
+    line-height: 1.5;
+}
+
+.card ul {
+    margin-top: 0;
+		margin-bottom: 1,5;
+}
+
+.card p, .card div {
+    margin-bottom: 0;
+}
+
+/* --- NIGHT MODE (Dark) --- */
+.nightMode.card {
+    background-color: #2b2b2b; /* Deep grey, better for OLED than pure black */
+    color: #e0e0e0;            /* Soft white text to prevent eye strain */
+    border: 1px solid #444;    /* Subtle dark border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Darker shadow */
+}
+
+/* Adjusting the divider line if you use <hr> */
+.nightMode hr {
+    border-top: 1px solid #555;
+}
